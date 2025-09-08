@@ -1,0 +1,29 @@
+/* Button transition */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+button:hover {
+  background: darkcyan;
+  transform: scale(1.1);
+}
+
+/* Box + keyframe animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  background: coral;
+}
+.bounce {
+  animation: bounce 1s ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
